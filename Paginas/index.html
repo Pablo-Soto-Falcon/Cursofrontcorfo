@@ -92,6 +92,39 @@
             color: #38b6ff;
         }
 
+        .services-container {
+            display: flex;
+            justify-content: space-around; /* Espacio entre los servicios */
+            flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+            padding: 20px;
+            max-width: 1200px; /* Máximo ancho del contenedor */
+            margin: 0 auto; /* Centra el contenedor */
+        }
+
+        .service {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            width: 250px; /* Ancho de cada servicio */
+            text-align: center; /* Centra el contenido dentro del servicio */
+        }
+
+        .service img {
+            max-width: 100%; /* Hace que la imagen sea responsiva */
+            border-radius: 10px; /* Esquinas redondeadas para la imagen */
+        }
+
+        .service h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .service p {
+            color: #666;
+        }
+
     </style>
 </head>
 <body>
@@ -119,19 +152,33 @@
         <p> El 80% de nuestro staff médico es especialista en diferentes áreas médicas, todos con una mención en docencia del paciente. Nuestro objetivo es que tu entiendas la enfermedad, el tratamiento y la resiliencia luego de la mejora.</p>
         <p> Visita alguno de los 9 centros a lo largo del país, nos encontramos en Santiago, Viña del Mar, La Serena, Iquique, Rancagua, Talca, Concepción, Temuco y Puerto Varas.</p>
 
+        <h3>Misión</h3>
+        <p>    Somos un establecimiento de salud, perteneciente a la red de salud del SSMC, centrado en las personas, con altos estándares de calidad y seguridad en los procesos asistenciales y administrativos, para lograr una atención de excelencia, oportuna, digna, confiable, inclusiva y cercana a las personas.    </p>
+
+        <h3>Visión</h3>
+        <p>Ser una institución de salud líder dentro del sistema público, referente de una atención segura, de calidad, oportuna, eficiente y centrada en las personas. </p>
 
         <h2> Servicios</h2>
-        <p> Consulta médica especialista presencial y telemedicina.</p>
-        <p> Examenes de Laboratorio.</p>
-        <p> Procedimientos ambulatorios.</p>
-        <p> Cirugía Robótica.</p>
-        <p> Turismo Médico.</p>
-        <p> Transporte de urgencia en mar, cielo y tierra.</p>
-        <p> Rehabilitación.</p>
-        <p> Centro del dolor.</p>
-        <p> Centro del Cancer.</p>
-        <p> Convenio con Clínicas especialistas a nivel mundial.</p>
-        <p> Seguros</p>
+
+        <div class="services-container">
+            <div class="service">
+                <img src="servicio1.jpg" alt="Consulta Médica">
+                <h3>Consultas Médicas con especialistas</h3>
+                <p>Solicita una consulta con un especialista experimentado en su campo. Un diagnóstico rápido y un remedio eficaz.</p>
+            </div>
+    
+            <div class="service">
+                <img src="servicio2.jpeg" alt="Exámenes de laboratorio">
+                <h3>Exámenes de Laboratorio</h3>
+                <p>Mejorar el diagnóstico a través de un examen exhaustivo y específico para cada enfermedad.</p>
+            </div>
+    
+            <div class="service">
+                <img src="servicio3.webp" alt="Convenio con centros internaionales">
+                <h3>Convenios con Hospitales Internaionales</h3>
+                <p>Te apoyamos encontrando otro hospital especialista en tu enfermedad, encualqueier parte del mundo..</p>
+            </div>
+        </div>
 
 
         <h2> Testimonios</h2>
